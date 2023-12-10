@@ -302,6 +302,8 @@ extension SourceKitObfuscator {
             let inheritedUSR = res.captureGroup(1, originalString: annotation)
             if usrs.contains(inheritedUSR) {
                 return result(true)
+            } else if usrsKey.contains("s:s7Codablea") || usrs.contains("s:s9CodingKeyP") {
+                return result(false)
             } else if try inheritsFromAnyUSR(inheritedUSR, anyOf: usrs, inModule: module) {
                 return result(true)
             }

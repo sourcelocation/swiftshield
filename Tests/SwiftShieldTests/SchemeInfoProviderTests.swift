@@ -20,7 +20,7 @@ final class SchemeInfoProviderTests: XCTestCase {
             "-workspace",
             "./test.xcworkspace",
             "-scheme",
-            "MyScheme", "-sdk", "iphonesimulator",
+            "MyScheme", "-sdk", "iphoneos",
             "clean",
             "build",
         ]
@@ -47,7 +47,7 @@ final class SchemeInfoProviderTests: XCTestCase {
             "-project",
             "./test.xcodeproj",
             "-scheme",
-            "MyScheme", "-sdk", "iphonesimulator",
+            "MyScheme", "-sdk", "iphoneos",
             "clean",
             "build",
         ]
